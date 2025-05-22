@@ -1,0 +1,30 @@
+/* CSS */
+.grid-container {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background:bisque;
+  border-radius: 35px;
+  box-shadow: 0 45px 60px rgb(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(10px); /* deplace la carte vert le haut*/
+}
+
+.card-img {
+  width: 95%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 550%;
+}
+
+.card-content {
+  padding: 15px;
+}
